@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto; /* makes the row centered */
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 100%; 
+    padding: 0px; 
+    margin: 0px;  
+}
+
+header {
+    background-color: #74b9ff;
+    height: 180vh;
+    background-size: cover; 
+    background-position: center;
+}
+
+.clearfix {zoom : 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block; 
+    height: 0;
+    visibility: hidden;
+}
+
+/*****************************/
+/* ---- MAIN NAVIGATION ---- */
+/*****************************/
+
+nav {
+    background-color: #fff;
+    height: 100px;
+}
+
+
+.dropdown {
+    display: none; 
+    font-size: 50px;
+    float: right; 
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0; 
+    z-index: 1;
+    margin-top: 10px; 
+}
+
+.dropdown-content a {
+    float: none; 
+    display: block; 
+    text-align: center;
+    text-decoration: none; 
+    font-size: 20px;
+    color: #000; 
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 100vw;
+    padding: 20px 0px;          
+}
+
+.dropdown-content a:active {
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content .x {
+    text-align: center;
+    border-top: none;
+    font-weight: 600;
+    font-size: 45px;
+    color: #3498db; 
+    width: 100%;     
+}
+
+.logo {
+    height: 70px; 
+    width: auto; 
+    float: left;
+    margin-left: 6%;
+    margin-top: 15px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 18%;
+}
+
+.main-nav li {
+    display: inline-block; 
+    margin-left: 40px;
+}
+
+.main-nav li a:link, .main-nav li a:visited { 
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    padding: 10px;
+    transition: border-bottom;    
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+    border-bottom: 2px solid #3498db;
+}
+
+/***********************/
+/* ---- SECTION 1 ---- */
+/***********************/
+
+h1 {
+    margin-top: 8%;
+    font-size: 45px;  
+    text-transform: uppercase;
+    text-align: center;
+    /*border: 2px solid #fff;*/ 
+}
+
+.outline h2 {
+    border-bottom: none; 
+    text-align: center; 
+    font-size: 30px; 
+}
+
+.OR h2 {
+    color: red;
+    font-size: 40px;  
+}
+
+.outline img {
+    width: auto; 
+    height: 200px; 
+}
+
+.outline .col {
+    width: 30%; 
+}
+
+.outline {
+    text-align: center; 
+}
+
+.outline p {
+    font-weight: 220; 
+    font-size: 17px; 
+}
+
+.outline .col {
+    margin-left: 0%; 
+}
+
+.outline .col:first-of-type {
+    margin-left: 5%; 
+}
+
+.definition {
+    margin-bottom: 20px; 
+}
+
+.outline .ppeBeneficiary .col:last-of-type {
+    width: 100%;
+    margin-left: 0%;  
+}
+
+/*
+.monetaryBeneficiary, .ppeBeneficiary {
+    border: 2px solid #fff;
+}
+*/
+
+.monetaryBeneficiary p, .ppeBeneficiary p {
+    width: 80%;
+    margin-left: 10%;    
+}
+
+
+.headerButton {
+    margin-top: 60px;
+    text-align: center; 
+}
+
+.headerButton a:link, .headerButton a:visited {
+    border-radius: 30px; 
+    background-color: #f1c40f;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: #000;
+    transition: background-color 0.2s; 
+}
+
+.headerButton a:hover, .headerButton a:active {
+    background-color: #d3ac10;  
+}
+
+/*******************************/
+/* ---- SECTION ABOUT US ---- */
+/******************************/
+
+h2 {
+    margin-top: 20px; 
+    text-transform: uppercase; 
+    font-size: 40px; 
+    font-weight: 250;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 15px;
+}
+
+.section-about {
+    background-color: #fff;
+}
+
+.section2and3 {
+    margin-top: 40px; 
+    line-height: 45px;
+    font-weight: 280; 
+}
+
+.donateButton:link, .donateButton:visited {
+    display: block; 
+    text-decoration: none; 
+    color: #e7e7e7; 
+    border: 0; 
+    background-color: #3498db; 
+    border-radius: 30px; 
+    padding: 5px 15px;
+    margin-top: 20px;
+    width: 22%;
+    transition: color 0.2s, background-color 0.2s;  
+}
+
+.section2and3 .donateButton:hover, .section2and3 .donateButton:active {
+    color: #000; 
+    background-color: #3090cf; 
+}
+
+.footnote {
+    background-color: #fff;
+    margin-bottom: 30px;
+    margin-left: 0px;   
+}
+
+.footnote p {
+    font-size: 12px; 
+}
+
+.section-about img {
+    height: auto; 
+    width: 450px;
+    float: right; 
+    margin-top: 40px;
+    border: 2px solid #3498db;
+    margin-bottom: 5px;
+    overflow: hidden;  
+}
+
+.emergency p {
+    float: right;
+    margin-bottom: 40px;   
+    font-size: 12px; 
+}
+
+/**********************************/
+/* ---- SECTION INSTRUCTIONS ---- */
+/**********************************/
+
+.section-instructions {
+    background-color: #e7e7e7;
+}
+
+.ppe-donations {
+    width: 100%; 
+    margin-top: 30px;  
+}
+
+.ppe-donations p {
+    font-weight: 220; 
+    font-size: 15px;
+}
+
+.catalog {
+    border: 2px solid #3498db;
+    margin-top: 20px;
+    width: 30%; 
+    margin-left: 35%;
+    margin-bottom: 20px;    
+}
+
+.items {
+    list-style: none;
+     
+}
+
+.items li {
+    display: inline-block;
+    margin-bottom: 10px;  
+}
+
+.items img {
+    height: 100px;
+    width: auto;  
+}
+
+.ppe-donations .items .donateButton {
+    width: 60%;
+    margin-left: 20%; 
+    padding: 10px;
+}
+
+.instructions {
+    margin-top: 40px; 
+}
+
+.instructions ul {
+    list-style: none;
+    line-height: 45px;
+}
+
+.instructions ul li {
+    margin-bottom: 15px;
+    font-weight: 220; 
+}
+
+.instructions ul li:last-of-type {
+    margin-bottom: 25px; 
+}
+
+.icon-s {
+    display: inline-block;
+    color: #3498db;
+    margin-right: 15px;   
+}
+
+.map {
+    height: 400px; 
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+    margin-left: 10%; 
+    border: 2px solid #3498db;  
+}
+
+.table {
+    height: 400px; 
+    width: 28%;
+    float: right;
+    margin-top: 40px;
+    margin-left: 2%; 
+    overflow: auto; 
+}
+
+.table ul li {
+    list-style: none;
+    padding: 5%;
+    font-weight: 220;
+    font-size: medium;
+    background-color: #93d7df;
+    /*transition: background-color 0.2s;*/ 
+    border-radius: 20px; 
+    margin-bottom: 10px;    
+}
+
+.table ul .special {
+    background-color: #f1c40f;
+}
+
+.table ul li p {
+    margin-top: 3px; 
+    font-size: small; 
+}
+
+.table .locations .selectButton {
+    display: inline-block;    
+    font-size: 0.9em;
+    padding: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #fff; 
+    border: none;
+    transition: background-color 0.2s;    
+}
+
+.table .locations .selectButton:hover {
+    background-color: #22a6b3; 
+}
+
+.table .locations .special .selectButton:hover {
+    background-color: #8b7106;
+}
+
+.donationList {
+    margin-left: 400px;
+}
+
+.donationList ul {
+    list-style: none; 
+}
+
+.section-instructions .donateButton {
+    float: left;
+    margin-left: 10%;
+    padding: 15px 10px;
+    width: 14%;
+    text-align: center;
+    font-weight: 220;
+    margin-top: 20px;
+}
+
+.section-instructions .icon-b {
+    float: left;
+    margin-left: 10%;  
+}
+
+.inputBox {
+    float: left;
+    border: none;
+    margin-top: 32px;
+    margin-left: 20px; 
+    border-radius: 10rem; 
+    font-size: .8rem;
+    padding: 10px 8px;
+    font-weight: 220; 
+    width: 250px;     
+}
+
+/***********************************/
+/* ---- SECTION FURTHER STEPS ---- */
+/***********************************/
+
+.section-further {
+    margin-bottom: 30px; 
+}
+
+h3 {
+    font-weight: 220;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3:after {
+    display: block; 
+    height: 2px; 
+    background-color: #3498db;
+    content: " "; 
+    width: 100px; 
+    margin: 0px auto; 
+    margin-top: 15px;
+}
+
+.steps {
+    margin-bottom: 30px; 
+}
+
+.steps img {
+    width: 300px; 
+    height: auto;
+}
+
+.steps p {
+    font-size: 17px; 
+    font-weight: 220;
+    text-align: center;  
+}
+
+.firstStep img {
+    margin-left: 20%;  
+}
+
+.secondStep img {
+    margin-left: 20%; 
+}
+
+.firstStep {
+    margin-left: 2.5%; 
+}
+
+.firstStep, .secondStep {
+    width: 40%;
+    margin-top: 5%;  
+}
+
+.secondStep {
+    float: right;
+    margin-top: 7%;
+    margin-right: 2.5%; 
+}
+
+.arrow {
+    width: 10%;
+    margin-left: 3.1%;
+    padding: 0px;
+    text-align: center;    
+}
+
+.arrow img {
+    width: 80px; 
+    height: auto;
+    margin-top: 140%;  
+}
+
+.partners img {
+    width: auto; 
+    height: 100px;
+    margin: 30px 20px 0px 20px;
+}
+
+.comingSoon p {
+    font-weight: 220; 
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 30px;  
+}
+
+/*******************************************/
+/* ---- SECTION MAKING THE BEST OF IT ---- */
+/*******************************************/
+
+.section-bestOfIt {
+    background-color: #e7e7e7;
+    padding-bottom: 15px; 
+}
+
+.opportunity p, .education p, .safe p {
+    margin-top: 20px; 
+    font-weight: 230;
+    line-height: 40px;
+}
+
+.opportunity ul {
+    list-style: none; 
+}
+
+.opportunity ul li {
+    margin-top: 20px; 
+    font-weight: 230;
+    line-height: 20px;
+    font-size: 15px; 
+}
+
+.icon-b {
+    color: #3498db;
+    font-size: 40px;
+    margin-left: 45%; 
+    margin-top: 30px;
+}
+
+.education p a:link, .education p a:visited {
+    text-decoration: none;
+    color: #3498db;  
+}
+
+/*******************************************/
+/* ---- SECTION FOOTER ---- */
+/*******************************************/
+
+footer {
+    background-color: rgb(32, 32, 32);
+    padding: 20px;  
+}
+
+.navFooter li, .socialMedia li {
+    display: inline-block; 
+    list-style: none;
+    font-weight: 220;
+    margin-right: 20px;
+    margin-top: 5px;     
+}
+
+.navFooter {
+    float: left;
+    font-size: 15px;
+}
+
+.socialMedia {
+    float: right;
+    font-size: 20px;  
+}
+
+.navFooter li a, .socialMedia li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #fff; 
+    font-size: 12px;
+    text-align: center;
+    font-weight: 220;
+    margin-top: 20px;    
+}
+
+
