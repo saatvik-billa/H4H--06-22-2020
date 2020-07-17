@@ -56,8 +56,6 @@ async function addMarker(obj, i) {
           <button class="selectButton">Select</button>
         </li>
       `
-      // #e74c3c -- red
-      // #3498db -- blue
     }
     
     document.querySelector('.locations').insertAdjacentHTML('beforeend', markup) 
